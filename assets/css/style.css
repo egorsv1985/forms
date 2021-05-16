@@ -101,7 +101,7 @@ body::before {
 	width: 63px;
 	height: 7px;
 	position: absolute;
-	bottom: 95px;
+	bottom: 90px;
 	left: 200px;
 	background: no-repeat center/cover url(../images/shape.png);
 }
@@ -110,7 +110,7 @@ body::before {
 	width: 63px;
 	height: 7px;
 	position: absolute;
-	bottom: -35px;
+	bottom: -40px;
 	left: 200px;
 	background: no-repeat center/cover url(../images/shape.png);
 }
@@ -169,7 +169,6 @@ body::before {
 	margin-bottom: 22px;
 	padding-left: 31px;
 	outline: none;
-	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.8);
 }
 .form__input:focus {
 	background-color: #d3e6f4;
@@ -178,13 +177,6 @@ body::before {
 	line-height: 20px;
 	font-weight: 400;
 	color: #5a5b5b;
-	border: 2px solid #b3cbda;
-	transform: translateX(15px);
-	-webkit-transform: translateX(15px);
-	-moz-transform: translateX(15px);
-	-ms-transform: translateX(15px);
-	-o-transform: translateX(15px);
-	width: 485px;
 }
 .form__input::placeholder {
 	font-family: Roboto;
@@ -193,7 +185,7 @@ body::before {
 	font-weight: 400;
 	color: #bdbdbd;
 }
-.text {
+.comment {
 	resize: none;
 	height: 147px;
 	padding-top: 15px;
@@ -214,14 +206,10 @@ body::before {
 	margin-right: 20px;
 }
 
-.form__captcha {
+.captcha {
 	width: 320px;
 	height: 40px;
-	border: 2px solid #ebebeb;
 	margin-bottom: 10px;
-	font-size: 16px;
-	line-height: 20px;
-	font-weight: 400;
 	color: #5a5b5b;
 	background-color: #f8f8f8;
 	outline: none;
@@ -229,13 +217,6 @@ body::before {
 .form__captcha:focus {
 	background-color: #d3e6f4;
 	border: 2px solid #b3cbda;
-	transform: translateX(15px);
-	-webkit-transform: translateX(15px);
-	-moz-transform: translateX(15px);
-	-ms-transform: translateX(15px);
-	-o-transform: translateX(15px);
-	width: 305px;
-	margin-right: 20px;
 }
 .form__text-bottom {
 	font-family: Roboto;
@@ -268,15 +249,8 @@ body::before {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.8);
 }
 .form__btn-submit:hover {
 	background-color: #23ceaa;
-	text-shadow: 0 0 15px rgb(23, 31, 150);
-	transition: transform 0.15s, box-shadow 0.15s;
-	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.8);
 	font-weight: bold;
-}
-.form__btn-submit:hover::before {
-	box-shadow: 0 0 0 2px #96154b, 0 0.5em 0 0 #ffe3e2;
 }

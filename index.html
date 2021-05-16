@@ -10,10 +10,10 @@
 </head>
 
 <body>
-	<div class="form">
+	<form class="form" action="#" method="post" autocomplete="on" id="form" name="form" validate target="_self">
 		<div class="form__top">
 			<button class="form__btn-close">
-				<img classform__top-img src="../assets/images/cross.png" alt="cross" class="form__img">
+				<img class="form__img" src="./assets/images/cross.png" alt="cross">
 			</button>
 			<div class="form__menu">
 				<ol class="form__list">
@@ -26,27 +26,29 @@
 			</div>
 		</div>
 		<div class="form__main">
-			<form class="form__form" action="#" method="post" autocomplete="on" id="form" name="form" novalidate
-				target="_self"></form>
 			<input class="form__input" type="text" name="text" id="text" placeholder="Иванов Иван Иванович"
 				autocomplete="on" required>
 			<input class="form__input" type="email" name="email" id="email" placeholder="Введите Ваш Email"
 				autocomplete="on" required>
 			<input class="form__input" type="tel" name="tel" id="tel" placeholder="Введите Ваш телефон" autocomplete="on"
 				required>
-			<textarea class="form__input text" name="comment" id="comment" placeholder="" autocomplete="on"></textarea>
+			<textarea class="form__input comment" name="comment" id="comment" placeholder="" autocomplete="on"></textarea>
 		</div>
 		<div class="form__bottom">
 			<div class="form__wrapper">
 				<div class="from__box">
-					<input class="form__captcha" type="text" name="captcha" id="captcha">
-					<label class="form__text-bottom">Введите код на картинке справа</д>
+					<input class="form__input captcha" type="text" name="captcha" id="captcha">
+					<label class="form__text-bottom">Введите код на картинке справа</label>
 				</div>
-				<img class="form__img-captcha" src="../assets/images/captcha" alt="captcha">
+				<img class="form__img-captcha" src="./assets/images/capcha.png" alt="captcha">
 			</div>
 			<button class="form__btn-submit" type="submit" value="Отправить">Отправить</button>
 		</div>
-	</div>
+
+	</form>
+
+
+
 
 </body>
 
