@@ -11,26 +11,43 @@
 
 <body>
 	<div class="form">
-		<div class="form__top"></div>
-		<div class="form__main"></div>
-		<div class="form__bottom"></div>
+		<div class="form__top">
+			<button class="form__top-btn">
+				<img src="../assets/images/cross.png" alt="cross" class="form__top-img">
+			</button>
+			<div class="form__top-menu">
+				<ol class="form__top-list">
+					<li class="form__top-item"><a class="form__top-link" href="#">Главная</a></li>
+					<li class="form__top-item"><a class="form__top-link" href="#">Контакты</a></li>
+					<li class="form__top-active">Форма обратной связи</li>
+				</ol>
+
+				<h1 class="form__top-title">Форма обратной связи</h1>
+			</div>
+		</div>
+		<div class="form__main">
+			<form class="form__main-form" action="#" method="post" autocomplete="on" id="form" name="form" novalidate
+				target="_self"></form>
+			<input class="form__main-input" type="text" name="text" id="text" placeholder="Иванов Иван Иванович"
+				autocomplete="on" required>
+			<input class="form__main-input" type="email" name="email" id="email" placeholder="Введите Ваш Email"
+				autocomplete="on" required>
+			<input class="form__main-input" type="tel" name="tel" id="tel" placeholder="Введите Ваш телефон"
+				autocomplete="on" required>
+			<textarea class="form__main-text" name="comment" id="comment" placeholder="" autocomplete="on"></textarea>
+		</div>
+		<div class="form__bottom">
+			<div class="form__bottom-wrapper">
+				<div class="from__bottom-box">
+					<input class="form__bottom-input" type="password" name="password" id="password">
+					<span class="form__bottom-text">Введите код на картинке справа</span>
+				</div>
+				<img src="../assets/images/capcha.png" alt="captcha">
+			</div>
+			<button class="form__bottom-btn" type="submit" value="Отправить">Отправить</button>
+		</div>
 	</div>
-	<!-- <form action="#" method="post" autocomplete="on" id="form" name="form" novalidate target="_self">
-		<legend></legend>
-		<fieldset form="form" name="">
-			<p><input type="text" name="" id="" placeholder="Иванов Иван Иванович" autocomplete="on" required></p>
-			<p><input type="email" name="" id="" placeholder="Введите Ваш Email" autocomplete="on" required></p>
 
-			<p><input type="tel" name="" id="" placeholder="Введите Ваш телефон" autocomplete="on" required></p>
-			<p><textarea name="" id="" cols="30" rows="10" placeholder="" autocomplete="on"></textarea></p>
-
-
-		</fieldset>
-		<fieldset form="form" name="captcha">
-			<p><input type="password" name="" id="" required></p>
-		</fieldset>
-		<p><input type="submit" value=""></p>
-	</form> -->
 </body>
 
 </html>
