@@ -1,6 +1,4 @@
 @import './components/**.*.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 *,
 *::after,
@@ -11,7 +9,9 @@
 }
 
 body {
-	min-height: 100vh;
+	height: 100dvh;
+	max-width: 100dvw;
+
 	background: no-repeat center/cover url(../images/background.jpg);
 	font-family: 'roboto';
 }
@@ -31,18 +31,15 @@ body::before {
 }
 
 .form {
-	width: 920px;
-	height: 820px;
+	max-width: 100dvw;
+	max-height: 100dvh;
+	width: 85%;
 
 	background-color: #fff;
 
 	box-shadow: 0px 0px 36px 4px rgba(44, 22, 29, 0.3);
 
 	border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	-o-border-radius: 30px;
 
 	display: flex;
 	flex-direction: column;
@@ -52,10 +49,6 @@ body::before {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
 }
 /* form__top */
 .form__top {
@@ -73,19 +66,11 @@ body::before {
 	top: -15px;
 	left: 50%;
 	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
 
 	background-color: #e10101;
 
 	border: none;
 	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
 
 	cursor: pointer;
 }
@@ -149,9 +134,10 @@ body::before {
 }
 /* form__top */
 .form__main {
-	padding: 50px 0;
-	width: 920px;
-	height: 432px;
+	padding: 50px;
+	max-width: 920px;
+	max-height: 432px;
+	width: 100%;
 	background-color: #f8f8f8;
 	box-shadow: inset 0px 0px 9px 0px rgba(1, 1, 1, 0.16);
 	display: flex;
@@ -165,7 +151,8 @@ body::before {
 	font-weight: 400;
 	color: #bdbdbd;
 	border: 2px solid #ebebeb;
-	width: 500px;
+	max-width: 500px;
+	width: 100%;
 	height: 40px;
 	margin-bottom: 22px;
 	padding-left: 31px;
@@ -205,6 +192,7 @@ body::before {
 	display: flex;
 	flex-direction: column;
 	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
 .captcha {
@@ -242,10 +230,6 @@ body::before {
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, 50%);
-	-webkit-transform: translate(-50%, 50%);
-	-moz-transform: translate(-50%, 50%);
-	-ms-transform: translate(-50%, 50%);
-	-o-transform: translate(-50%, 50%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
