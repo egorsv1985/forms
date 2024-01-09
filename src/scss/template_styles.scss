@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import './components/**.*.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 *,
 *::after,
@@ -12,11 +13,11 @@
 body {
 	min-height: 100vh;
 	background: no-repeat center/cover url(../images/background.jpg);
-	font-family: "roboto";
+	font-family: 'roboto';
 }
 
 body::before {
-	content: "";
+	content: '';
 
 	opacity: 60%;
 
@@ -97,7 +98,7 @@ body::before {
 	position: relative;
 }
 .form__menu::before {
-	content: "";
+	content: '';
 	width: 63px;
 	height: 7px;
 	position: absolute;
@@ -106,7 +107,7 @@ body::before {
 	background: no-repeat center/cover url(../images/shape.png);
 }
 .form__menu::after {
-	content: "";
+	content: '';
 	width: 63px;
 	height: 7px;
 	position: absolute;
